@@ -509,3 +509,25 @@ time9=time.clock()
 # print ("XGB train time:", time8 - time7, "XGB test time", time9 - time8, 'XGB total time', time9 - time7)
 # print 'total train time', time2-time1+time4 - time3+time6 - time5+time8 - time7, 'total test time',time3-time2+time5 - time4+time7 - time6+time9 - time8, 'total run time', time9-time1
 
+# data_readme:
+# 1.rawdata file contains the csv raw data;
+# 2. emotiv_7sub_5class, 7sub, each 34560 samples,  the data in this file folders, are ordered by label.  Each row of the data contain 16 elements: 1-14 are denote 14 channel EEG raw data, the 15th denotes the label of classes, the 16th column denotes the lable of subject.
+# 3. For each data: The samples are belong to 5 classes (each 48 seconds). totally for 240 seconds collection data, the sampling rate is 128Hz.
+
+# 4. The lable of subjects:
+	#1.  xiang Zhang
+	#2.  xigang Yuan
+	#3.  xiaoqing Zhang
+	#4.  Dalin Zhang
+	#5.  xiaodong Ning
+	#6.  manqing Dong
+	#7.  kaixuan Chen
+
+# 5. The label of actions: 
+    #up:1
+	#down: 2
+	#left:3
+	#right:4 
+	#eye close: 5
+
+# 6. The channels named: AF3 F7 F3 FC5 T7 P7 O1 O2 P8 T8 FC6 F4 F8 AF4
